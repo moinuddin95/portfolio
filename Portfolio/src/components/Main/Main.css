@@ -1,0 +1,30 @@
+main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main nav{
+  position: relative;
+  list-style: none;
+  display: flex;
+  
+  border-radius: 1rem;
+  margin-top: clamp(1rem, 5vh, 2rem);
+  padding: 0.1rem;
+  background-color: #2f2f2f;
+  border: solid rgb(23, 60, 89) 0.2rem;
+  width: max-content;
+}
+main button{
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  border: none;
+}
+main button:hover{
+  background-color: rgb(23, 60, 89);
+}
+main h3{
+  font-size: 1.5rem;
+  color: white;
+}
