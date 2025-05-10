@@ -1,7 +1,7 @@
-import "./Main.css";
-function Main() {
+import "./Header.css";
+function Headers() {
   return (
-    <main>
+    <header>
       <h1>Moinuddin Shaikh</h1>
       <h3>Full stack developer</h3>
       <ul>
@@ -61,8 +61,8 @@ function Main() {
           <span>github.com/moinuddin95</span>
         </li>
       </ul>
-    </main>
+    </header>
   );
 }
 
-export default Main;
+export default Headers;
