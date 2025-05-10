@@ -10,7 +10,6 @@ button, button:active, button:focus, button:hover{
   box-shadow: none;
 }
 :root {
-  background-color: rgb(47, 47, 47);
   background-color: #2f2f2f;
   background-image: linear-gradient(rgb(23, 60, 89) 1px, transparent 1px), linear-gradient(90deg, rgb(23, 60, 89) 1px, transparent 1px);
   background-size: 20px 20px;

@@ -34,6 +34,6 @@ main button:hover, main button.selected{
   background-color: rgb(23, 60, 89);
 }
 main h3{
-  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
   color: white;
 }

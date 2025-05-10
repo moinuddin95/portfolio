@@ -1,3 +1,4 @@
+import Work from "../Work/Work";
 import "./Main.css";
 
 function Main() {
@@ -14,6 +15,7 @@ function Main() {
           <h3>Projects</h3>
         </button>
       </nav>
+      <Work />
     </main>
   );
 }
