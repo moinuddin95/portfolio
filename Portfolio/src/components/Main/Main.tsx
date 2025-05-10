@@ -7,6 +7,7 @@ function Main() {
       <ul>
         <li>
           <svg
+            className="contact-icons"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -24,6 +25,7 @@ function Main() {
         </li>
         <li>
           <svg
+            className="contact-icons"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
@@ -42,6 +44,7 @@ function Main() {
         </li>
         <li>
           <svg
+            className="contact-icons"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
