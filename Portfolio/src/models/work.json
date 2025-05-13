@@ -1,0 +1,35 @@
+[
+  {
+    "organization": "Google Developer Group Sheridan",
+    "location": "Oakville, ON, Canada",
+    "position": "Website Coordinator",
+    "start_date": "September 2024",
+    "end_date": "Present",
+    "responsibilities": [
+      "Lead Developer of mobile-optimized website www.gdgsheridan.com, using React, Express, and Docker for scalable deployment",
+      "Used LLMs for efficiency",
+      "Implemented CI/CD pipelines using Github Actions",
+      "Conducting workshops and meetings with students on web and cloud technologies"
+    ]
+  },
+  {
+    "organization": "Sheridan College",
+    "location": "Mississauga, ON, Canada",
+    "position": "Peer Mentor",
+    "start_date": "January 2024",
+    "end_date": "Present",
+    "responsibilities": [
+      "Scheduling 1:1 session with students and providing guidance through their academic life",
+      "Representing Sheridan at college fairs",
+      "Assisted in organizing career-oriented and tech events involving the web development community"
+    ]
+  },
+  {
+    "organization": "Dal Moro’s Fresh Pasta To-Go",
+    "location": "Mississauga, ON, Canada",
+    "position": "Store Front Employee",
+    "start_date": "June 2024",
+    "end_date": "Present",
+    "responsibilities": []
+  }
+]
