@@ -13,6 +13,7 @@ div#work{
 
 .work.card{
   padding-bottom: 2rem;
+  width: 100%;
 }
 .work.card > .header{
   display: grid;
