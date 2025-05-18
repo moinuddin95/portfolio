@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 
+
 *{
   margin:0;
+  font-family: "JetBrains Mono", monospace;
 }
 body{
   height: 100vh;
@@ -10,9 +12,6 @@ button, button:active, button:focus, button:hover{
   box-shadow: none;
 }
 :root {
-  background-color: #2f2f2f;
-  background-image: linear-gradient(rgb(23, 60, 89) 1px, transparent 1px), linear-gradient(90deg, rgb(23, 60, 89) 1px, transparent 1px);
+  background-color: var(--primary-dark);
   background-size: 20px 20px;
-  color: white;
-  font-family: "JetBrains Mono", monospace;
 }
