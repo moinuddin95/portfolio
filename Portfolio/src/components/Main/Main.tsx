@@ -18,10 +18,6 @@ function Main() {
           onClick={() => setSelectedTab(1)}>
           <h3>Education</h3>
         </button>
-        <button className={selectedTab === 2 ? "selected" : ""} 
-          onClick={() => setSelectedTab(2)}>
-          <h3>Projects</h3>
-        </button>
       </nav>
       <Work />
     </main>

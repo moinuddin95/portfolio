@@ -4,9 +4,11 @@
 *{
   margin:0;
   font-family: "JetBrains Mono", monospace;
+  --primary: #fff9ea;
 }
 body{
   height: 100vh;
+  background-color: var(--primary);
 }
 button, button:active, button:focus, button:hover{
   box-shadow: none;
