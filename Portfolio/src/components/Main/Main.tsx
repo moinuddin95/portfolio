@@ -1,25 +1,29 @@
 import { useState } from "react";
-import Work from "../Work/Work";
+import WorkEducation from "../WorkEducation/WorkEducation";
 import "./Main.css";
+import { WorkEducationType } from "../../interfaces/WorkEducation";
 
 function Main() {
-  const [selectedTab, setSelectedTab] = useState(0);
-  // 0 -> Work
-  // 1 -> Education
-  // 2 -> Projects
+  const [selectedTab, setSelectedTab] = useState(WorkEducationType.WORK);
   return (
     <main>
       <nav>
-        <button className={selectedTab === 0 ? "selected" : ""} 
-          onClick={() => setSelectedTab(0)}>
+        <button
+          className={selectedTab === WorkEducationType.WORK ? "selected" : ""}
+          onClick={() => setSelectedTab(0)}
+        >
           <h3>Work</h3>
         </button>
-        <button className={selectedTab === 1 ? "selected" : ""} 
-          onClick={() => setSelectedTab(1)}>
+        <button
+          className={
+            selectedTab === WorkEducationType.EDUCATION ? "selected" : ""
+          }
+          onClick={() => setSelectedTab(1)}
+        >
           <h3>Education</h3>
         </button>
       </nav>
-      <Work />
+      <WorkEducation tab={selectedTab}/>
     </main>
   );
 }
