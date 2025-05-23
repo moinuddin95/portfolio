@@ -2,9 +2,11 @@ import { useState } from "react";
 import WorkEducation from "../WorkEducation/WorkEducation";
 import "./Main.css";
 import { WorkEducationType } from "../../interfaces/WorkEducation";
+import introAnimationHook from "../../hooks/introAnimationHook";
 
 function Main() {
   const [selectedTab, setSelectedTab] = useState(WorkEducationType.WORK);
+
   return (
     <main>
       <nav>

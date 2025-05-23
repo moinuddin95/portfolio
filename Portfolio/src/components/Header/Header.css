@@ -16,6 +16,7 @@ header > img{
   height: clamp(7rem, 20vw, 15rem);
   border: solid 0.5rem black;
   mix-blend-mode: multiply;
+
 }
 
 h1{

@@ -2,8 +2,10 @@ import "./Header.css";
 import headshot from "../../assets/Headshot.jpg";
 import headshot_shy from "../../assets/Headshot_Shy.png";
 import { useState } from "react";
+import introAnimationHook from "../../hooks/introAnimationHook";
 function Headers() {
   const [headshotImg, setHeadshotImg] = useState(headshot);
+
   return (
     <header>
       <img
