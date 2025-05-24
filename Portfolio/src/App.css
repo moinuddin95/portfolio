@@ -1,4 +1,7 @@
 #root{
+}
+
+#root > #background{
   position: absolute;
   inset: 0 0 auto 0;
   
@@ -6,10 +9,23 @@
   filter: url(#my-filter);
 }
 
+.circle{
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  /* mix-blend-mode: difference; */
+}
+
 header > *, main > * {
   opacity: 0;
 }
-
 .introAnimation {
   animation: scrollAnimation 3s ease forwards;
 }
@@ -23,14 +39,4 @@ header > *, main > * {
     filter: blur(0px);
     opacity: 1;
   }
-  /* 0%{
-    filter: blur(2px);
-    transform: scale(0.6) translateY(10%);
-    opacity: 1;
-  }
-  100%{
-    filter: blur(0px);
-    transform: scale(1) translateY(0%);
-    opacity: 1;
-  } */
 }

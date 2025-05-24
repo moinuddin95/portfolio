@@ -5,6 +5,7 @@
   margin:0;
   font-family: "JetBrains Mono", monospace;
   --primary: #fff9ea;
+  cursor: none;
 }
 button, button:active, button:focus, button:hover{
   box-shadow: none;
