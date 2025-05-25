@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Conscient",
+    "link": "Link to Project",
+    "role": "Full Stack Developer",
+    "description": [
+      "Vibe coded the frontend using Lovable",
+      "Built an AI Chat bot using Grok AI",
+      "Trained the AI using matplotlib.pyplot and Natural Language Processing"
+    ]
+  },
+  {
+    "title": "Polaris",
+    "link": "Link to Project",
+    "role": "Backend Developer",
+    "description": [
+      "Used Mappedin API and essential web technologies to develop a fully functional event navigation platform",
+      "Used Third-party Node.js modules and the Voiceflow API to integrate an AI chatbot",
+      "Used MongoDB Atlas to deploy the database for the project"
+    ]
+  },
+  {
+    "title": "Multi Knives",
+    "link": "Link to Project",
+    "role": "Indie Game Developer",
+    "description": [
+      "Used C#, Photoshop and Audacity to develop a fully functional mobile game, inspired by the game 'Knife Hit'",
+      "Learned core programming concepts like OOPs and functionalities of Unity Game Engine",
+      "Used Photoshop to develop the sprites and Audacity to record and edit the sounds from scratch"
+    ]
+  }
+]

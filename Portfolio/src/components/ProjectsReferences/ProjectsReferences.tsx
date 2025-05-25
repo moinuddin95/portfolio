@@ -1,11 +1,13 @@
-import "./WorkEducation.css";
+import "./ProjectsReferences.css";
 import workData from "../../models/work.json";
 import educationData from "../../models/education.json";
 import { useEffect, useRef, useState } from "react";
-import WorkEducationType from "../../interfaces/WorkEducation";
+import ProjectsReferencesType from "../../interfaces/ProjectsReferences";
 
-function WorkEducation() {
-  const [selectedTab, setSelectedTab] = useState(WorkEducationType.WORK);
+function ProjectsReferences() {
+  const [selectedTab, setSelectedTab] = useState(
+    ProjectsReferencesType.PROJECTS
+  );
 
   const containerRef = useRef<HTMLDivElement | null>(null);
   const workRef = useRef<HTMLDivElement | null>(null);
@@ -13,7 +15,7 @@ function WorkEducation() {
 
   useEffect(() => {
     const height =
-      selectedTab === WorkEducationType.WORK
+      selectedTab === ProjectsReferencesType.PROJECTS
         ? workRef.current?.clientHeight
         : educationRef.current?.clientHeight;
     if (containerRef.current && height !== undefined) {
@@ -25,25 +27,29 @@ function WorkEducation() {
     <>
       <nav>
         <button
-          className={selectedTab === WorkEducationType.WORK ? "selected" : ""}
+          className={
+            selectedTab === ProjectsReferencesType.PROJECTS ? "selected" : ""
+          }
           onClick={() => setSelectedTab(0)}
         >
-          <h3>Work</h3>
+          <h3>Projects</h3>
         </button>
         <button
           className={
-            selectedTab === WorkEducationType.EDUCATION ? "selected" : ""
+            selectedTab === ProjectsReferencesType.REFERENCES ? "selected" : ""
           }
           onClick={() => setSelectedTab(1)}
         >
-          <h3>Education</h3>
+          <h3>References</h3>
         </button>
       </nav>
       <div id="work-education" ref={containerRef}>
         <div
           id="work"
           ref={workRef}
-          className={selectedTab === WorkEducationType.WORK ? " selected" : ""}
+          className={
+            selectedTab === ProjectsReferencesType.PROJECTS ? " selected" : ""
+          }
         >
           {workData.map((item, index) => (
             <div key={index} className="card">
@@ -68,7 +74,7 @@ function WorkEducation() {
           id="education"
           ref={educationRef}
           className={
-            selectedTab === WorkEducationType.EDUCATION ? " selected" : ""
+            selectedTab === ProjectsReferencesType.REFERENCES ? " selected" : ""
           }
         >
           {educationData.map((item, index) => (
@@ -86,4 +92,4 @@ function WorkEducation() {
   );
 }
 
-export default WorkEducation;
+export default ProjectsReferences;

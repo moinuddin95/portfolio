@@ -1,0 +1,70 @@
+#projects-technologies {
+  position: relative;
+  margin: 2rem auto;
+  padding: 3rem 3rem 0rem 3rem;
+  width: min(70vw, 60rem);
+  height: 60vh;
+  border: solid black 0.25rem;
+  border-radius: 2rem;
+  transition: height var(--animation-delay) ease;
+}
+
+* {
+  --animation-delay: 1.5s;
+}
+
+#projects-technologies .selected {
+  display: flex;
+  opacity: 0;
+  animation: fadeEffect var(--animation-delay) ease var(--animation-delay)
+    forwards;
+}
+
+#projects,
+#technologies {
+  display: none;
+  position: relative;
+  inset: 0;
+
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-around;
+  justify-content: space-around;
+  opacity: 1;
+  transition: opacity 3s ease;
+}
+
+
+#projects-technologies .card {
+  padding-bottom: 2rem;
+  width: 100%;
+}
+
+/* Individual card styles here */
+#projects-technologies .card > .header {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+#projects-technologies .card > .header > p {
+  text-align: right;
+}
+
+#projects-technologies .card > ul {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+/* technology card styles here */
+
+#technologies .card{
+  width: min-content;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
