@@ -7,6 +7,10 @@
   --primary: #fff9ea;
   cursor: none;
 }
+a{
+  color:inherit;
+  text-decoration: none;
+}
 button, button:active, button:focus, button:hover{
   box-shadow: none;
 }

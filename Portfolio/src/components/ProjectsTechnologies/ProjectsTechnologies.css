@@ -28,8 +28,8 @@
 
   flex-wrap: wrap;
   align-items: flex-start;
-  align-content: space-around;
-  justify-content: space-around;
+  align-content: space-between;
+  justify-content: space-between;
   opacity: 1;
   transition: opacity 3s ease;
 }

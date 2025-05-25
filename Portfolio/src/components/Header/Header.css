@@ -63,7 +63,7 @@ header > nav > button{
   padding: 0.3rem 1.5rem;
 }
 
-header > nav > button > span > svg{
+header > nav > button > a > span > svg{
   position: relative;
   top:5%;
   margin-left: 0.5rem;
