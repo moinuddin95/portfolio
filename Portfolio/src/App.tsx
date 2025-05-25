@@ -8,6 +8,7 @@ function App() {
   introAnimationHook("header > *, main > *");
 
   useEffect(() => {
+    if (window.innerWidth < 1000) return;
     const circles = document.querySelectorAll(".circle");
     let delay = 1;
     circles.forEach((circle, index) => {

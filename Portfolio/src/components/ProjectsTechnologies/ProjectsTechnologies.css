@@ -3,7 +3,7 @@
   margin: 2rem auto;
   padding: 3rem 3rem 0rem 3rem;
   width: min(70vw, 60rem);
-  height: 60vh;
+  height: auto;
   border: solid black 0.25rem;
   border-radius: 2rem;
   transition: height var(--animation-delay) ease;
