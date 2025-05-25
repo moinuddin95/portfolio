@@ -4,7 +4,7 @@ import technologiesData from "../../models/technologies.json";
 import { useEffect, useRef, useState } from "react";
 import ProjectsTechnologiesType from "../../interfaces/ProjectsTechnologies";
 
-function ProjectsReferences() {
+function ProjectsTechnologies() {
   const [selectedTab, setSelectedTab] = useState(
     ProjectsTechnologiesType.PROJECTS
   );
@@ -94,4 +94,4 @@ function ProjectsReferences() {
   );
 }
 
-export default ProjectsReferences;
+export default ProjectsTechnologies;
