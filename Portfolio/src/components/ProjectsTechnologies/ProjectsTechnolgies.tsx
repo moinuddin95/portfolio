@@ -83,7 +83,7 @@ function ProjectsTechnologies() {
               <h3>{technologySection.title}</h3>
               <ul className="technology-list">
               {technologySection.list.map((technology, index) => (
-                <li>{technology}</li>
+                <li key={index}>{technology}</li>
               ))}
               </ul>
             </div>
