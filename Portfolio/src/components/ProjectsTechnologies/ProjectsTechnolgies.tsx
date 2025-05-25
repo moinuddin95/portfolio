@@ -14,13 +14,21 @@ function ProjectsTechnologies() {
   const technologiesRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const height =
-      selectedTab === ProjectsTechnologiesType.PROJECTS
-        ? projectsRef.current?.clientHeight
-        : technologiesRef.current?.clientHeight;
-    if (containerRef.current && height !== undefined) {
-      containerRef.current.style.height = `${height}px`;
-    }
+    const updateHeight = () => {
+      const newHeight =
+        selectedTab === ProjectsTechnologiesType.PROJECTS
+          ? projectsRef.current?.clientHeight
+          : technologiesRef.current?.clientHeight;
+      if (containerRef.current && newHeight !== undefined) {
+        containerRef.current.style.height = `${newHeight}px`;
+      }
+    };
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
   }, [selectedTab]);
 
   return (

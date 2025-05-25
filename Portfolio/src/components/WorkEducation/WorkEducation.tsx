@@ -12,13 +12,21 @@ function WorkEducation() {
   const educationRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const height =
-      selectedTab === WorkEducationType.WORK
-        ? workRef.current?.clientHeight
-        : educationRef.current?.clientHeight;
-    if (containerRef.current && height !== undefined) {
-      containerRef.current.style.height = `${height}px`;
-    }
+    const updateHeight = () => {
+      const newHeight =
+        selectedTab === WorkEducationType.WORK
+          ? workRef.current?.clientHeight
+          : educationRef.current?.clientHeight;
+      if (containerRef.current && newHeight !== undefined) {
+        containerRef.current.style.height = `${newHeight}px`;
+      }
+    };
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => {
+      window.removeEventListener("resize", updateHeight);
+    };
   }, [selectedTab]);
 
   return (
