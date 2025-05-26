@@ -29,22 +29,32 @@ h3 {
 /* Headshot chat styles here  */
 
 header > div#box{
+  width: 25rem;
+  height: 7rem;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: absolute;
+  transform: translateX(-70%);
+  z-index: 1;
+}
+
+header > div#box > div{
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 20rem;
-  height: 7rem;
-  position: absolute;
-  z-index: 1;
-  transform: translateX(-70%);
+  text-align: center;
+  height: fit-content;
+  padding: 1rem;
   border-radius: 1rem;
   border: solid black 0.2rem;
+  z-index: 1;
   background-color: var(--primary);
 }
-header > div#box::after, header > div#box::before{
+header > div#box > div::after, header > div#box > div::before{
   content: '';
   position: absolute;
-  bottom: 0.2rem;
+  bottom: 0.4rem;
   right: 1rem;
   transform: translateY(calc(100% + 0.2rem));
   width: 0;
@@ -54,7 +64,7 @@ header > div#box::after, header > div#box::before{
   background: none;
 }
 
-header > div#box::before{
+header > div#box > div::before{
   right: 0.8rem;
   border-left: 2.4rem solid transparent;
   border-top: 2.4rem solid black;

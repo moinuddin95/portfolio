@@ -16,7 +16,7 @@ function Headers() {
   } else if (selectedIcon === HeaderIconsTypes.GITHUB) {
     boxMessage = "Click to checkout my github!";
   } else if (selectedIcon === HeaderIconsTypes.LINKEDIN) {
-    boxMessage = "Click to checkout my linkedin!";
+    boxMessage = "Check out my linkedin!";
   } else if (selectedIcon === HeaderIconsTypes.EMAIL_CONFIRMATION) {
     boxMessage = "Email is copied!";
   } else {
@@ -34,8 +34,9 @@ function Headers() {
 
   return (
     <header>
-      <div id="box" className={selectedIcon === null ? "disabled" : ""}>
-        {boxMessage}
+      {/* <div id="box" className={selectedIcon === null ? "disabled" : ""}> */}
+      <div id="box" >
+        <div>{boxMessage}</div>
       </div>
       <img
         src={headshotImg}

@@ -5,7 +5,7 @@
   margin:0;
   font-family: "JetBrains Mono", monospace;
   --primary: #fff9ea;
-  /* cursor: none; */
+  cursor: none;
 }
 a{
   color:inherit;
