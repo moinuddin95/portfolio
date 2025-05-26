@@ -13,7 +13,7 @@ function App() {
     let delay = 1;
     circles.forEach((circle, index) => {
       const circleElem = circle as HTMLElement;
-      circleElem.style.transform = `scale(${(circles.length - index) / circles.length})`;
+      circleElem.style.transform = `translateX(-50%) translateY(-50%) scale(${(circles.length - index) / circles.length})`;
       circleElem.style.transition = `top ${delay}ms ease, left ${delay}ms ease`;
       delay += 15;
       const moveCircles = (event: MouseEvent) => {
