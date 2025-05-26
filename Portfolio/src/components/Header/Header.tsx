@@ -17,6 +17,8 @@ function Headers() {
     boxMessage = "Click to checkout my github!";
   } else if (selectedIcon === HeaderIconsTypes.LINKEDIN) {
     boxMessage = "Click to checkout my linkedin!";
+  } else if (selectedIcon === HeaderIconsTypes.EMAIL_CONFIRMATION) {
+    boxMessage = "Email is copied!";
   } else {
     boxMessage = "Click to download my resume!";
   }
@@ -56,6 +58,7 @@ function Headers() {
             <button
               onClick={() => {
                 navigator.clipboard.writeText("moinuddinshaikh173@gmail.com");
+                setSelectedIcon(HeaderIconsTypes.EMAIL_CONFIRMATION);
               }}
               style={{
                 background: "none",
@@ -83,17 +86,18 @@ function Headers() {
               </svg>
             </button>
           </li>
-          <li>
+          <li
+            onMouseEnter={() => {
+              iconOnMouseEnter(HeaderIconsTypes.LINKEDIN);
+            }}
+            onMouseLeave={() => {
+              iconOnMouseLeave();
+            }}
+          >
             <a
               href="https://www.linkedin.com/in/shaikh-moinuddin"
               target="_blank"
               rel="noopener noreferrer"
-              onMouseEnter={() => {
-                iconOnMouseEnter(HeaderIconsTypes.LINKEDIN);
-              }}
-              onMouseLeave={() => {
-                iconOnMouseLeave();
-              }}
             >
               <svg
                 className="contact-icons"

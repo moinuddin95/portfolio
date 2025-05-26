@@ -17,21 +17,14 @@ function App() {
       circleElem.style.transition = `top ${delay}ms ease, left ${delay}ms ease`;
       delay += 15;
       const moveCircles = (event: MouseEvent) => {
-        const pointerBorder = 10;
-        if (
-          event.clientX <= pointerBorder ||
-          event.clientX >= window.innerWidth - pointerBorder ||
-          event.clientY <= pointerBorder ||
-          event.clientY >= window.innerHeight - pointerBorder
-        ) {
-          circleElem.style.display = "none";
-          return;
-        }
         circleElem.style.display = "block";
         circleElem.style.top = `${event.clientY}px`;
         circleElem.style.left = `${event.clientX}px`;
       };
       window.addEventListener("mousemove", moveCircles);
+      window.addEventListener("mouseout", () => {
+        circleElem.style.display = "none";
+      })
     });
   }, []);
 
@@ -41,14 +34,16 @@ function App() {
         <Header />
         <Main />
       </div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
+      <div id="pointer">
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+        <div className="circle"></div>
+      </div>
     </>
   );
 }

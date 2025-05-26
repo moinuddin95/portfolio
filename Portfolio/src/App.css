@@ -14,18 +14,17 @@
 .circle {
   position: fixed;
   display: none;
-  transform: translateX(-50%) translateY(-50%);
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 999;
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: black;
-  /* mix-blend-mode: difference; */
+  background-color: white;
 }
-
+div#pointer{
+  mix-blend-mode: difference;
+}
 header > img,
 header > h1,
 header > h3,
