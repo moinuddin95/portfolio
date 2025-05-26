@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moinuddin Shaikh</title>
   </head>
-  <svg>
+  <body>
+  <svg style="position: absolute; width:0; height:0">
     <filter id="my-filter">
       <feTurbulence type="turbulence" baseFrequency="0.2" result="noise" />
       <feColorMatrix
@@ -20,7 +21,6 @@
       <feBlend in="noiseAlpha" in2="SourceGraphic" type="multiply" />
     </filter>
   </svg>
-  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

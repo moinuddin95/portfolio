@@ -1,9 +1,12 @@
+#root{
+  position: relative;
+  min-height: 100%;
+}
+
 #root > #background {
   position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-
+  inset: 0;
+  z-index: -1;
   background-color: var(--primary);
   filter: url(#my-filter);
 }

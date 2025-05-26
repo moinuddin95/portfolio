@@ -4,7 +4,6 @@
   padding: clamp(1rem, 3vw, 3rem);
   padding-bottom: 0;
   width: min(75vw, 60rem);
-  height: auto;
   border: solid black var(--border-thickness);
   border-radius: clamp(1.5rem, 2vw, 2rem);
   transition: height var(--animation-delay) ease;
