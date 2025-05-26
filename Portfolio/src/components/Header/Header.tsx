@@ -24,6 +24,8 @@ function Headers() {
   }
 
   const iconOnMouseEnter = (type: HeaderIconsTypes) => {
+    if(window.innerWidth < 1000)
+      return;
     setSelectedIcon(type);
     setHeadshotImg(headshot_talk);
   };
@@ -34,7 +36,7 @@ function Headers() {
 
   return (
     <header>
-      <div id="box" className={selectedIcon === null ? "disabled" : ""}>
+      <div id="box" className={selectedIcon === null || window.innerWidth < 1000? "disabled" : ""}>
       {/* <div id="box" > */}
         <div>{boxMessage}</div>
       </div>
@@ -59,6 +61,7 @@ function Headers() {
             <button
               onClick={() => {
                 navigator.clipboard.writeText("moinuddinshaikh173@gmail.com");
+                if(window.innerWidth > 1000)
                 setSelectedIcon(HeaderIconsTypes.EMAIL_CONFIRMATION);
               }}
               style={{
