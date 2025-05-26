@@ -3,31 +3,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 main nav {
-  --radius: 1.5rem;
-  --border-thickness: 0.3rem;
-  --button-radius: calc(var(--radius) * 0.8);
+  --radius: clamp(1rem, 1vw, 1.5rem);
+  --border-thickness: clamp(0.2rem, 0.5vw, 0.3rem);
   position: relative;
   margin-top: clamp(1rem, 5vh, 2rem);
   width: max-content;
   display: flex;
   border: solid black var(--border-thickness);
   border-radius: var(--radius);
+  overflow: hidden;
 }
 main button {
   background-color: var(--primary);
   padding: 2vw 4vw;
   padding: clamp(0.2rem, 1.5vw, 0.5rem) clamp(1rem, 3vw, 2rem);
   border: none;
-}
-main button:nth-of-type(1),
-button:nth-of-type(3) {
-  border-radius: var(--button-radius) 0 0 var(--button-radius);
-}
-main button:nth-of-type(2),
-button:nth-of-type(4) {
-  border-radius: 0 var(--button-radius) var(--button-radius) 0;
 }
 main button:hover,
 main button:hover > h3,
