@@ -1,9 +1,9 @@
 #projects-technologies {
   position: relative;
-  box-sizing: border-box;
   margin: 2rem auto;
   padding: clamp(1rem, 3vw, 3rem);
-  width: min(90vw, 60rem);
+  padding-bottom: 0;
+  width: min(75vw, 60rem);
   height: auto;
   border: solid black var(--border-thickness);
   border-radius: clamp(1.5rem, 2vw, 2rem);
@@ -46,8 +46,14 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
 }
-#projects-technologies .card > .header > p {
-  text-align: right;
+#project-technologies .card > h3{
+  font-size: clamp(1.1rem, 2vw, 3rem);
+}
+#project-technologies .card > h4{
+  font-size: clamp(1rem, 2vw, 2.5rem);
+}
+#projects-technologies .card p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 #projects-technologies .card > ul {

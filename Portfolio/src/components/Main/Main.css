@@ -3,7 +3,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
 }
 main nav {
   --radius: clamp(1rem, 1vw, 1.5rem);

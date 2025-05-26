@@ -18,7 +18,7 @@ function WorkEducation() {
           ? workRef.current?.clientHeight
           : educationRef.current?.clientHeight;
       if (containerRef.current && newHeight !== undefined) {
-        containerRef.current.style.height = `${newHeight}px`;
+        containerRef.current.style.height = `calc(${newHeight}px`;
       }
     };
 

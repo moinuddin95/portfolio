@@ -112,7 +112,7 @@ header > nav > ul {
   grid-template-columns: auto auto auto;
 
   border-radius: 1rem;
-  padding: 0rem 1.5rem;
+  padding: 0rem 1rem;
   border: solid var(--border-thickness) black;
 }
 

@@ -64,9 +64,7 @@ function ProjectsTechnologies() {
           {projectsData.map((item, index) => (
             <div key={index} className="card">
               <h3>{item.title}</h3>
-              <div className="header">
-                <h4>{item.role}</h4>
-              </div>
+              <h4>{item.role}</h4>
               <ul>
                 {item.description.map((descriptionPoint, index) => (
                   <li key={index}>
