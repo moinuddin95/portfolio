@@ -1,11 +1,12 @@
 #projects-technologies {
   position: relative;
+  box-sizing: border-box;
   margin: 2rem auto;
-  padding: 3rem 3rem 0rem 3rem;
-  width: min(70vw, 60rem);
+  padding: clamp(1rem, 3vw, 3rem);
+  width: min(90vw, 60rem);
   height: auto;
-  border: solid black 0.25rem;
-  border-radius: 2rem;
+  border: solid black var(--border-thickness);
+  border-radius: clamp(1.5rem, 2vw, 2rem);
   transition: height var(--animation-delay) ease;
 }
 
