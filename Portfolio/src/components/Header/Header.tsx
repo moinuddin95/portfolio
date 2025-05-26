@@ -34,8 +34,8 @@ function Headers() {
 
   return (
     <header>
-      {/* <div id="box" className={selectedIcon === null ? "disabled" : ""}> */}
-      <div id="box" >
+      <div id="box" className={selectedIcon === null ? "disabled" : ""}>
+      {/* <div id="box" > */}
         <div>{boxMessage}</div>
       </div>
       <img

@@ -45,16 +45,28 @@ header > div#box > div{
   align-items: center;
   text-align: center;
   height: fit-content;
+  transform-origin: bottom right;
   padding: 1rem;
   border-radius: 1rem;
   border: solid black 0.2rem;
   z-index: 1;
   background-color: var(--primary);
+  animation: popup 0.5s forwards ease;
 }
+
+@keyframes popup{
+  from{
+    transform: scale(0.1);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
 header > div#box > div::after, header > div#box > div::before{
   content: '';
   position: absolute;
-  bottom: 0.4rem;
+  bottom: 0.2rem;
   right: 1rem;
   transform: translateY(calc(100% + 0.2rem));
   width: 0;
