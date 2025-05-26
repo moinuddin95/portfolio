@@ -1,6 +1,7 @@
 import "./Header.css";
 import headshot from "../../assets/Headshot.jpg";
 import headshot_shy from "../../assets/Headshot_Shy.png";
+import headshot_talk from "../../assets/Headshot_Talk.png";
 import { useState } from "react";
 import HeaderIconsTypes from "../../enums/HeaderIconsTypes";
 function Headers() {
@@ -20,6 +21,15 @@ function Headers() {
     boxMessage = "Click to download my resume!";
   }
 
+  const iconOnMouseEnter = (type: HeaderIconsTypes) => {
+    setSelectedIcon(type);
+    setHeadshotImg(headshot_talk);
+  };
+  const iconOnMouseLeave = () => {
+    setSelectedIcon(null);
+    setHeadshotImg(headshot);
+  };
+
   return (
     <header>
       <div id="box" className={selectedIcon === null ? "disabled" : ""}>
@@ -37,10 +47,10 @@ function Headers() {
         <ul>
           <li
             onMouseEnter={() => {
-              setSelectedIcon(HeaderIconsTypes.EMAIL);
+              iconOnMouseEnter(HeaderIconsTypes.EMAIL);
             }}
             onMouseLeave={() => {
-              setSelectedIcon(null);
+              iconOnMouseLeave();
             }}
           >
             <button
@@ -79,10 +89,10 @@ function Headers() {
               target="_blank"
               rel="noopener noreferrer"
               onMouseEnter={() => {
-                setSelectedIcon(HeaderIconsTypes.LINKEDIN);
+                iconOnMouseEnter(HeaderIconsTypes.LINKEDIN);
               }}
               onMouseLeave={() => {
-                setSelectedIcon(null);
+                iconOnMouseLeave();
               }}
             >
               <svg
@@ -109,10 +119,10 @@ function Headers() {
               target="_blank"
               rel="noopener noreferrer"
               onMouseEnter={() => {
-                setSelectedIcon(HeaderIconsTypes.GITHUB);
+                iconOnMouseEnter(HeaderIconsTypes.GITHUB);
               }}
               onMouseLeave={() => {
-                setSelectedIcon(null);
+                iconOnMouseLeave();
               }}
             >
               <svg
@@ -135,10 +145,10 @@ function Headers() {
         </ul>
         <button
           onMouseEnter={() => {
-            setSelectedIcon(HeaderIconsTypes.RESUME);
+            iconOnMouseEnter(HeaderIconsTypes.RESUME);
           }}
           onMouseLeave={() => {
-            setSelectedIcon(null);
+            iconOnMouseLeave();
           }}
         >
           <a href="/Resume.pdf" download className="download-btn">

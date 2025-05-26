@@ -1,6 +1,6 @@
-header{
+header {
   padding-top: clamp(1.25rem, 5vh, 3rem);
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,21 +9,20 @@ header{
 
 /* headshot styles here */
 
-header > img{
+header > img {
   border-radius: 50%;
   width: clamp(7rem, 20vw, 15rem);
   height: clamp(7rem, 20vw, 15rem);
   border: solid 0.5rem black;
   mix-blend-mode: multiply;
-
 }
 
-h1{
+h1 {
   font-size: clamp(2rem, 6vw, 5rem);
   width: fit-content;
   height: fit-content;
 }
-h3{
+h3 {
   font-size: clamp(1rem, 3vw, 2rem);
 }
 
@@ -38,18 +37,36 @@ header > div#box{
   position: absolute;
   z-index: 1;
   transform: translateX(-70%);
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   border: solid black 0.2rem;
-  background-color: white;
+  background-color: var(--primary);
+}
+header > div#box::after, header > div#box::before{
+  content: '';
+  position: absolute;
+  bottom: 0.2rem;
+  right: 1rem;
+  transform: translateY(calc(100% + 0.2rem));
+  width: 0;
+  height: 0;
+  border-left: 2rem solid transparent;
+  border-top: 2rem solid var(--primary);
+  background: none;
 }
 
-div#box.disabled{
+header > div#box::before{
+  right: 0.8rem;
+  border-left: 2.4rem solid transparent;
+  border-top: 2.4rem solid black;
+}
+
+div#box.disabled {
   display: none;
 }
 
 /* Contact details styles here */
 
-header > nav{
+header > nav {
   display: flex;
   gap: 2rem;
   margin-top: clamp(1rem, 5vh, 2rem);
@@ -66,18 +83,18 @@ header > nav > ul > li:hover {
   transform: scale(1.2);
 }
 
-header > nav > ul{
+header > nav > ul {
   position: relative;
   list-style: none;
   display: flex;
-  gap:2rem;
-  
+  gap: 2rem;
+
   border-radius: 1rem;
   padding: 0.3rem 1.5rem;
   border: solid 0.2rem black;
 }
 
-header > nav > button{
+header > nav > button {
   border: solid 0.2rem black;
   border-radius: 1rem;
   background-color: var(--primary);
@@ -85,18 +102,18 @@ header > nav > button{
   padding: 0.3rem 1.5rem;
 }
 
-header > nav > button > a > span > svg{
+header > nav > button > a > span > svg {
   position: relative;
-  top:5%;
+  top: 5%;
   margin-left: 0.5rem;
 }
 
-@property --angle{
-  syntax: '<angle>';
+@property --angle {
+  syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
-header li{
+header li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -104,11 +121,10 @@ header li{
 
 /* Responsive styles here  */
 
-.contact-icons{
+.contact-icons {
   height: clamp(1rem, 4vw, 1.5rem);
   width: auto;
 }
-
 
 /* Code debris starts here */
 
