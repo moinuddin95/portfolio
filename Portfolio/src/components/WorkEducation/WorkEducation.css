@@ -1,4 +1,4 @@
-#work-education{
+#work-education {
   position: relative;
   box-sizing: border-box;
   margin: 2rem auto;
@@ -10,17 +10,19 @@
   transition: height var(--animation-delay) ease;
 }
 
-*{
+* {
   --animation-delay: 1.5s;
 }
 
-#work-education .selected{
+#work-education .selected {
   display: flex;
   opacity: 0;
-  animation: fadeEffect var(--animation-delay) ease var(--animation-delay) forwards;
+  animation: fadeEffect var(--animation-delay) ease var(--animation-delay)
+    forwards;
 }
 
-#work, #education{
+#work,
+#education {
   display: none;
   position: relative;
   inset: 0;
@@ -32,30 +34,41 @@
   transition: opacity 3s ease;
 }
 
-#work-education .card{
+#work-education .card {
   padding-bottom: 2rem;
   width: 100%;
 }
 
 /* Individual card styles here */
-#work-education .card > .header{
+#work-education .card > .header {
   display: grid;
   grid-template-columns: repeat(2, 50%);
 }
-#work-education .card > .header > p{
+#work-education .card > h3 {
+  font-size: clamp(1.1rem, 2vw, 3rem);
+}
+#work-education .card > .header > h4,
+#work-education .card > .header > p,
+#work-education .card > ul {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}
+#work-education .card > .header > p {
+  justify-self: end;
   text-align: right;
+  width: fit-content;
+  height: fit-content;
 }
 
-#work-education .card > ul{
+#work-education .card > ul {
   padding-top: 1rem;
   padding-left: 1rem;
 }
 
-@keyframes fadeEffect{
-  from{
+@keyframes fadeEffect {
+  from {
     opacity: 0;
   }
-  to{
+  to {
     opacity: 1;
   }
 }
