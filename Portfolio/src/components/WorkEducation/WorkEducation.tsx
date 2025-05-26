@@ -2,7 +2,7 @@ import "./WorkEducation.css";
 import workData from "../../models/work.json";
 import educationData from "../../models/education.json";
 import { useEffect, useRef, useState } from "react";
-import WorkEducationType from "../../interfaces/WorkEducation";
+import WorkEducationType from "../../enums/WorkEducation";
 
 function WorkEducation() {
   const [selectedTab, setSelectedTab] = useState(WorkEducationType.WORK);

@@ -1,17 +1,17 @@
-#root{
+#root {
 }
 
-#root > #background{
+#root > #background {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
-  
+
   background-color: var(--primary);
   filter: url(#my-filter);
 }
 
-.circle{
+.circle {
   position: fixed;
   display: none;
   top: 0;
@@ -25,19 +25,23 @@
   /* mix-blend-mode: difference; */
 }
 
-header > *, main > * {
+header > img,
+header > h1,
+header > h3,
+header > nav,
+main > * {
   opacity: 0;
 }
 .introAnimation {
   animation: scrollAnimation 3s ease forwards;
 }
 
-@keyframes scrollAnimation{
-  0%{
+@keyframes scrollAnimation {
+  0% {
     filter: blur(7px);
     opacity: 0;
   }
-  100%{
+  100% {
     filter: blur(0px);
     opacity: 1;
   }

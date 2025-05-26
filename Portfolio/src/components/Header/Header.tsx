@@ -2,11 +2,29 @@ import "./Header.css";
 import headshot from "../../assets/Headshot.jpg";
 import headshot_shy from "../../assets/Headshot_Shy.png";
 import { useState } from "react";
+import HeaderIconsTypes from "../../enums/HeaderIconsTypes";
 function Headers() {
   const [headshotImg, setHeadshotImg] = useState(headshot);
+  const [selectedIcon, setSelectedIcon] = useState<HeaderIconsTypes | null>(
+    null
+  );
+
+  let boxMessage = "";
+  if (selectedIcon === HeaderIconsTypes.EMAIL) {
+    boxMessage = "Click to copy my email!";
+  } else if (selectedIcon === HeaderIconsTypes.GITHUB) {
+    boxMessage = "Click to checkout my github!";
+  } else if (selectedIcon === HeaderIconsTypes.LINKEDIN) {
+    boxMessage = "Click to checkout my linkedin!";
+  } else {
+    boxMessage = "Click to download my resume!";
+  }
 
   return (
     <header>
+      <div id="box" className={selectedIcon === null ? "disabled" : ""}>
+        {boxMessage}
+      </div>
       <img
         src={headshotImg}
         onMouseEnter={() => setHeadshotImg(headshot_shy)}
@@ -17,7 +35,14 @@ function Headers() {
 
       <nav>
         <ul>
-          <li>
+          <li
+            onMouseEnter={() => {
+              setSelectedIcon(HeaderIconsTypes.EMAIL);
+            }}
+            onMouseLeave={() => {
+              setSelectedIcon(null);
+            }}
+          >
             <button
               onClick={() => {
                 navigator.clipboard.writeText("moinuddinshaikh173@gmail.com");
@@ -53,6 +78,12 @@ function Headers() {
               href="https://www.linkedin.com/in/shaikh-moinuddin"
               target="_blank"
               rel="noopener noreferrer"
+              onMouseEnter={() => {
+                setSelectedIcon(HeaderIconsTypes.LINKEDIN);
+              }}
+              onMouseLeave={() => {
+                setSelectedIcon(null);
+              }}
             >
               <svg
                 className="contact-icons"
@@ -77,6 +108,12 @@ function Headers() {
               href="https://www.github.com/moinuddin95"
               target="_blank"
               rel="noopener noreferrer"
+              onMouseEnter={() => {
+                setSelectedIcon(HeaderIconsTypes.GITHUB);
+              }}
+              onMouseLeave={() => {
+                setSelectedIcon(null);
+              }}
             >
               <svg
                 className="contact-icons"
@@ -96,7 +133,14 @@ function Headers() {
             </a>
           </li>
         </ul>
-        <button>
+        <button
+          onMouseEnter={() => {
+            setSelectedIcon(HeaderIconsTypes.RESUME);
+          }}
+          onMouseLeave={() => {
+            setSelectedIcon(null);
+          }}
+        >
           <a href="/Resume.pdf" download className="download-btn">
             <span>
               Resume

@@ -2,7 +2,7 @@ import "./ProjectsTechnologies.css";
 import projectsData from "../../models/projects.json";
 import technologiesData from "../../models/technologies.json";
 import { useEffect, useRef, useState } from "react";
-import ProjectsTechnologiesType from "../../interfaces/ProjectsTechnologies";
+import ProjectsTechnologiesType from "../../enums/ProjectsTechnologies";
 
 function ProjectsTechnologies() {
   const [selectedTab, setSelectedTab] = useState(
@@ -90,9 +90,9 @@ function ProjectsTechnologies() {
             <div key={index} className="card">
               <h3>{technologySection.title}</h3>
               <ul className="technology-list">
-              {technologySection.list.map((technology, index) => (
-                <li key={index}>{technology}</li>
-              ))}
+                {technologySection.list.map((technology, index) => (
+                  <li key={index}>{technology}</li>
+                ))}
               </ul>
             </div>
           ))}
