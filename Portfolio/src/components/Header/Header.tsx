@@ -24,8 +24,7 @@ function Headers() {
   }
 
   const iconOnMouseEnter = (type: HeaderIconsTypes) => {
-    if(window.innerWidth < 1000)
-      return;
+    if (window.innerWidth < 1000) return;
     setSelectedIcon(type);
     setHeadshotImg(headshot_talk);
   };
@@ -37,8 +36,14 @@ function Headers() {
   return (
     <header>
       <div id="box" className={selectedIcon === null || window.innerWidth < 1000? "disabled" : ""}>
-      {/* <div id="box" > */}
-        <div>{boxMessage}</div>
+      {/* <div id="box"> */}
+        <div>
+          {boxMessage}
+          <svg viewBox="0 0 100 100" width="40" height="40">
+            <polygon points="0,3 100 3 100,100" fill="black" />
+            <polygon points="12,0 90,0 92,80" fill="var(--primary)" />
+          </svg>
+        </div>
       </div>
       <img
         src={headshotImg}
@@ -61,8 +66,8 @@ function Headers() {
             <button
               onClick={() => {
                 navigator.clipboard.writeText("moinuddinshaikh173@gmail.com");
-                if(window.innerWidth > 1000)
-                setSelectedIcon(HeaderIconsTypes.EMAIL_CONFIRMATION);
+                if (window.innerWidth > 1000)
+                  setSelectedIcon(HeaderIconsTypes.EMAIL_CONFIRMATION);
               }}
               style={{
                 background: "none",
