@@ -35,6 +35,7 @@ function App() {
       <div id="background"></div>
       <Header />
       <Main />
+
       <div id="pointer">
         <div className="circle"></div>
         <div className="circle"></div>

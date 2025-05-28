@@ -120,7 +120,7 @@ header > nav > ul {
 header > nav > button {
   border: solid var(--border-thickness) black;
   border-radius: 1rem;
-  background-color: var(--primary);
+  background-color: transparent;
   font-size: clamp(1.2rem, 3vw, 1.5rem);
   padding: 0.3rem 1.5rem;
 }

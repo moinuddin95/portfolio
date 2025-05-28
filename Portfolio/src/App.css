@@ -22,6 +22,8 @@
   border-radius: 50%;
   background-color: white;
 }
+
+
 div#pointer{
   mix-blend-mode: difference;
 }
