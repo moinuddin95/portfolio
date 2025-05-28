@@ -5,6 +5,32 @@ import { useEffect, useRef, useState } from "react";
 import ProjectsTechnologiesType from "../../enums/ProjectsTechnologies";
 
 function ProjectsTechnologies() {
+  // const [selectedTab, setSelectedTab] = useState(
+  //   ProjectsTechnologiesType.PROJECTS
+  // );
+
+  // const containerRef = useRef<HTMLDivElement | null>(null);
+  // const projectsRef = useRef<HTMLDivElement | null>(null);
+  // const technologiesRef = useRef<HTMLDivElement | null>(null);
+
+  // useEffect(() => {
+  //   const updateHeight = () => {
+  //     const newHeight =
+  //       selectedTab === ProjectsTechnologiesType.PROJECTS
+  //         ? projectsRef.current?.clientHeight
+  //         : technologiesRef.current?.clientHeight;
+  //     if (containerRef.current && newHeight !== undefined) {
+  //       containerRef.current.style.height = `${newHeight}px`;
+  //     }
+  //   };
+
+  //   updateHeight();
+  //   window.addEventListener("resize", updateHeight);
+  //   return () => {
+  //     window.removeEventListener("resize", updateHeight);
+  //   };
+  // }, [selectedTab]);
+
   const [selectedTab, setSelectedTab] = useState(
     ProjectsTechnologiesType.PROJECTS
   );
@@ -63,7 +89,27 @@ function ProjectsTechnologies() {
         >
           {projectsData.map((item, index) => (
             <div key={index} className="card">
-              <h3>{item.title}</h3>
+              <a href={item.link} target="_">
+                <h3>
+                  {item.title}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5rem"
+                    height="1.5rem"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M15 3h6v6" />
+                    <path d="M10 14 21 3" />
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  </svg>
+                </h3>
+              </a>
+
               <h4>{item.role}</h4>
               <ul>
                 {item.description.map((descriptionPoint, index) => (
