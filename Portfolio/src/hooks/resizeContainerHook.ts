@@ -33,7 +33,7 @@ function resizeContainerHook(
     if (!activeRef) return;
 
     // ResizeObserver will trigger when the element's size changes (including initial render)
-    const resizeObserver = new ResizeObserver((entries) => {
+    const resizeObserver = new ResizeObserver(() => {
       updateHeight();
     });
     resizeObserver.observe(activeRef);
