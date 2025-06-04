@@ -5,6 +5,7 @@
   margin:0;
   font-family: "JetBrains Mono", monospace;
   --primary: #fff9ea;
+  --secondary: #c4de92;
   --border-thickness: clamp(0.15rem, 0.5vw, 0.2rem);
   cursor: none;
 }

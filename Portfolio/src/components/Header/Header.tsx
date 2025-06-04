@@ -41,7 +41,7 @@ function Headers() {
           {boxMessage}
           <svg viewBox="0 0 100 100" width="40" height="40">
             <polygon points="0,3 100 3 100,100" fill="black" />
-            <polygon points="12,0 90,0 92,80" fill="var(--primary)" />
+            <polygon points="12,0 90,0 92,80" fill="var(--secondary)" />
           </svg>
         </div>
       </div>
