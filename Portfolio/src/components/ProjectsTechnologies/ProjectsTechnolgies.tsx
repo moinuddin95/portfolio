@@ -1,61 +1,18 @@
 import "./ProjectsTechnologies.css";
 import projectsData from "../../models/projects.json";
 import technologiesData from "../../models/technologies.json";
-import { useEffect, useRef, useState } from "react";
 import ProjectsTechnologiesType from "../../enums/ProjectsTechnologies";
+import resizeContainerHook from "../../hooks/resizeContainerHook";
+
 
 function ProjectsTechnologies() {
-  // const [selectedTab, setSelectedTab] = useState(
-  //   ProjectsTechnologiesType.PROJECTS
-  // );
-
-  // const containerRef = useRef<HTMLDivElement | null>(null);
-  // const projectsRef = useRef<HTMLDivElement | null>(null);
-  // const technologiesRef = useRef<HTMLDivElement | null>(null);
-
-  // useEffect(() => {
-  //   const updateHeight = () => {
-  //     const newHeight =
-  //       selectedTab === ProjectsTechnologiesType.PROJECTS
-  //         ? projectsRef.current?.clientHeight
-  //         : technologiesRef.current?.clientHeight;
-  //     if (containerRef.current && newHeight !== undefined) {
-  //       containerRef.current.style.height = `${newHeight}px`;
-  //     }
-  //   };
-
-  //   updateHeight();
-  //   window.addEventListener("resize", updateHeight);
-  //   return () => {
-  //     window.removeEventListener("resize", updateHeight);
-  //   };
-  // }, [selectedTab]);
-
-  const [selectedTab, setSelectedTab] = useState(
-    ProjectsTechnologiesType.PROJECTS
-  );
-
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  const projectsRef = useRef<HTMLDivElement | null>(null);
-  const technologiesRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const updateHeight = () => {
-      const newHeight =
-        selectedTab === ProjectsTechnologiesType.PROJECTS
-          ? projectsRef.current?.clientHeight
-          : technologiesRef.current?.clientHeight;
-      if (containerRef.current && newHeight !== undefined) {
-        containerRef.current.style.height = `${newHeight}px`;
-      }
-    };
-
-    updateHeight();
-    window.addEventListener("resize", updateHeight);
-    return () => {
-      window.removeEventListener("resize", updateHeight);
-    };
-  }, [selectedTab]);
+  const {
+    selectedTab,
+    setSelectedTab,
+    containerRef,
+    firstOptionRef: projectsRef,
+    secondOptionRef: technologiesRef,
+  } = resizeContainerHook(ProjectsTechnologiesType.PROJECTS);
 
   return (
     <>

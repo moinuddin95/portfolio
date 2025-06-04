@@ -1,33 +1,17 @@
 import "./WorkEducation.css";
 import workData from "../../models/work.json";
 import educationData from "../../models/education.json";
-import { useEffect, useRef, useState } from "react";
+import resizeContainerHook from "../../hooks/resizeContainerHook";
 import WorkEducationType from "../../enums/WorkEducation";
 
 function WorkEducation() {
-  const [selectedTab, setSelectedTab] = useState(WorkEducationType.WORK);
-
-  const containerRef = useRef<HTMLDivElement | null>(null);
-  const workRef = useRef<HTMLDivElement | null>(null);
-  const educationRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const updateHeight = () => {
-      const newHeight =
-        selectedTab === WorkEducationType.WORK
-          ? workRef.current?.clientHeight
-          : educationRef.current?.clientHeight;
-      if (containerRef.current && newHeight !== undefined) {
-        containerRef.current.style.height = `calc(${newHeight}px`;
-      }
-    };
-
-    updateHeight();
-    window.addEventListener("resize", updateHeight);
-    return () => {
-      window.removeEventListener("resize", updateHeight);
-    };
-  }, [selectedTab]);
+  const {
+    selectedTab,
+    setSelectedTab,
+    containerRef,
+    firstOptionRef:workRef,
+    secondOptionRef:educationRef,
+  } = resizeContainerHook(WorkEducationType.WORK);
 
   return (
     <>

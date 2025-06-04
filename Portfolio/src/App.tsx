@@ -1,12 +1,18 @@
 import "./App.css";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
-import introAnimationHook from "./hooks/introAnimationHook";
 import { useEffect } from "react";
 
-function App() {
-  introAnimationHook("header > *, main > *");
+function introAnimationHook(query: string){
+  useEffect(() => {
+    const childElem = document.querySelectorAll(query);
+    for(let i = 0; i < childElem.length; i++){
+      setTimeout(() => {childElem[i].classList.add("introAnimation");}, i * 400);
+    }
+  }, []);
+}
 
+function mouseTrailAnimationHook(){
   useEffect(() => {
     if (window.innerWidth < 1000) return;
     const circles = document.querySelectorAll(".circle");
@@ -29,6 +35,12 @@ function App() {
       });
     });
   }, []);
+}
+
+function App() {
+  introAnimationHook("header > *, main > *");
+
+  mouseTrailAnimationHook();
 
   return (
     <>
