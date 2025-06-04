@@ -1,6 +1,6 @@
 [
   {"title": "Programming Languages", "list": ["TypeScript", "Java", "C#", "C++", "Python", "JavaScript"]},
-  {"title": "Backend", "list": ["JUnit", "Express.js", "SpringBoot", ".NET"]},
+  {"title": "Backend", "list": ["Express.js", "SpringBoot", ".NET", "SQL", "NoSQL", "Bash"]},
   {"title": "Frontend", "list": ["React.js", "Angular.js", "SCSS", "Tailwind"]},
   {"title": "DevOps", "list": ["Linux/Unix", "Git", "Bash", "Docker", "AWS", "GitHub Actions"]}
 ]
