@@ -23,7 +23,7 @@ function ProjectsTechnologies() {
           }
           onClick={() => setSelectedTab(0)}
         >
-          <h3>Projects</h3>
+          <h3>Featured Projects</h3>
         </button>
         <button
           className={
