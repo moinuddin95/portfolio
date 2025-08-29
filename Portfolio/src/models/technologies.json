@@ -1,6 +1,7 @@
 [
   {"title": "Programming Languages", "list": ["TypeScript", "Java", "C#", "C++", "Python", "JavaScript"]},
-  {"title": "Backend", "list": ["Express.js", "SpringBoot", ".NET", "SQL", "NoSQL", "Bash"]},
+  {"title": "Backend", "list": ["Express.js", "SpringBoot", ".NET", "SQL", "NoSQL"]},
   {"title": "Frontend", "list": ["React.js", "Angular.js", "SCSS", "Tailwind"]},
-  {"title": "DevOps", "list": ["Linux/Unix", "Git", "Bash", "Docker", "AWS", "GitHub Actions"]}
+  {"title": "DevOps", "list": ["Linux/Unix", "Git", "Bash", "Docker", "AWS", "GitHub Actions"]},
+  {"title": "Databases", "list": ["MongoDB", "PostgreSQL", "MySQL", "SQLServer"]}
 ]

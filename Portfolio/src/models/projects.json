@@ -1,22 +1,22 @@
 [
   {
+    "title": "nocaps",
+    "link": "https://nocaps.moinuddin.tech",
+    "role": "Full Stack Developer",
+    "description": [
+      "Built a CLI tool for debugging",
+      "Used Auth0 PKCE + localhost for authorization",
+      "Built the API on express"
+    ]
+  },
+  {
     "title": "Conscient",
     "link": "https://github.com/Khushal-Me/Conscient",
     "role": "Full Stack Developer",
     "description": [
-      "Vibe coded the frontend using Lovable",
-      "Built an AI Chat bot using Grok AI",
+      "Built the frontend using Lovable",
+      "Fine-tuned an AI Model using Grok AI",
       "Trained the AI using matplotlib.pyplot and Natural Language Processing"
-    ]
-  },
-  {
-    "title": "Polaris",
-    "link": "https://devpost.com/software/polaris-j9pcs2",
-    "role": "Backend Developer",
-    "description": [
-      "Used Mappedin API and essential web technologies to develop a fully functional event navigation platform",
-      "Used Third-party Node.js modules and the Voiceflow API to integrate an AI chatbot",
-      "Used MongoDB Atlas to deploy the database for the project"
     ]
   },
   {
