@@ -1,5 +1,16 @@
 [
   {
+    "organization": "The Closet Software",
+    "location": "Remote",
+    "position": "Founder",
+    "start_date": "September 2025",
+    "end_date": "Present",
+    "responsibilities": [
+      "Developed a web extension using React, TypeScript, Supabase and Gemini API that helps users try on clothes virtually.",
+      "Used Instagram and TikTok ads to market the product."
+    ]
+  },
+  {
     "organization": "Google Developer Group Sheridan",
     "location": "Oakville, ON, Canada",
     "position": "Website Coordinator",
