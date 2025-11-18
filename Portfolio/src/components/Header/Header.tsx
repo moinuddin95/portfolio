@@ -164,7 +164,7 @@ function Headers() {
             iconOnMouseLeave();
           }}
         >
-          <a href="/Resume.pdf" download className="download-btn">
+          <a href="/Moinuddin_Shaikh_Resume.pdf" download className="download-btn">
             <span>
               Resume
               <svg
