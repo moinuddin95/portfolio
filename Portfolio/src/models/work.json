@@ -7,6 +7,7 @@
     "end_date": "Present",
     "responsibilities": [
       "Developed a web extension using React, TypeScript, Supabase and Gemini API that helps users try on clothes virtually.",
+      "Managed deadlines, features and deployments using Github Copilot",
       "Used Instagram and TikTok ads to market the product."
     ]
   },
@@ -18,7 +19,6 @@
     "end_date": "Present",
     "responsibilities": [
       "Lead Developer of mobile-optimized website www.gdgsheridan.com, using React, Express, and Docker for scalable deployment",
-      "Used LLMs for efficiency",
       "Implemented CI/CD pipelines using Github Actions",
       "Conducting workshops and meetings with students on web and cloud technologies"
     ]

@@ -1,5 +1,15 @@
 [
   {
+    "title": "The Closet Software Web Extension",
+    "link": "https://github.com/moinuddin95/the-closet-software",
+    "role": "Full Stack Developer",
+    "description": [
+      "Developed a web extension using React, TypeScript, Supabase and Gemini API that helps users try on clothes virtually.",
+      "Added Seamless Try-On feature among various fashion platforms",
+      "Learned chrome extension development."
+    ]
+  },
+  {
     "title": "nocaps",
     "link": "https://nocaps.moinuddin.tech",
     "role": "Full Stack Developer",
@@ -7,16 +17,6 @@
       "Built a CLI tool for debugging",
       "Used Auth0 PKCE + localhost for authorization",
       "Built the API on express"
-    ]
-  },
-  {
-    "title": "Conscient",
-    "link": "https://github.com/Khushal-Me/Conscient",
-    "role": "Full Stack Developer",
-    "description": [
-      "Built the frontend using Lovable",
-      "Fine-tuned an AI Model using Grok AI",
-      "Trained the AI using matplotlib.pyplot and Natural Language Processing"
     ]
   },
   {
