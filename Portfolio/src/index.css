@@ -10,6 +10,7 @@
   cursor: none;
   --small-font-size: clamp(0.8rem, 2vw, 1rem);
   --regular-font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  color: black;
 }
 a{
   color:inherit;

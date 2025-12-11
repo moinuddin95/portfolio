@@ -41,8 +41,10 @@
 
 /* Individual card styles here */
 #work-education .card > .header {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
 }
 #work-education .card > .header > p,
 #work-education .card > ul,

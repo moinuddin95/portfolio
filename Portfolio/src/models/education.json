@@ -3,6 +3,18 @@
       "institution": "Sheridan College",
       "graduation_date": "April 2025",
       "degree": "Diploma in Computer Programming",
-      "gpa": 3.8
+      "gpa": 3.6
+    },
+    {
+      "institution": "Udemy",
+      "graduation_date": "September 2025",
+      "degree": "Java Master Class",
+      "gpa": null
+    },
+    {
+      "institution": "Cisco Networking Academy",
+      "graduation_date": "June 2023",
+      "degree": "Cisco Networking Basics",
+      "gpa": null
     }
   ]

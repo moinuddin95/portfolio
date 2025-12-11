@@ -65,7 +65,10 @@ function WorkEducation() {
         >
           {educationData.map((item, index) => (
             <div key={index} className="card">
-              <h3>{item.degree}</h3>
+              <div className="header">
+                <h3>{item.degree}</h3>
+                <p>{item.gpa ? `GPA: ${item.gpa}` : ""}</p>
+              </div>
               <div className="header">
                 <h4>{item.institution}</h4>
                 <p>{item.graduation_date}</p>

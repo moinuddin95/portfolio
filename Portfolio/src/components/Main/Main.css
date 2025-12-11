@@ -28,3 +28,7 @@ main button.selected > h3 {
   background-color: black;
   color: var(--primary);
 }
+
+main h3 {
+  font-size: var(--regular-font-size);
+}

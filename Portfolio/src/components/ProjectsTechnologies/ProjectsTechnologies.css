@@ -70,6 +70,8 @@
 #projects h3{
   transition: transform 0.5s;
   transform-origin: bottom left;
+}
+#projects-technologies  h3{
   font-size: var(--regular-font-size);
 }
 #projects h3:hover{
