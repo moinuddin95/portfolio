@@ -8,6 +8,8 @@
   --secondary: #c4de92;
   --border-thickness: clamp(0.15rem, 0.5vw, 0.2rem);
   cursor: none;
+  --small-font-size: clamp(0.8rem, 2vw, 1rem);
+  --regular-font-size: clamp(1.2rem, 2.5vw, 1.8rem);
 }
 a{
   color:inherit;

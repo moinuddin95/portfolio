@@ -45,11 +45,8 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
 }
-#projects-technologies .card > h4{
-  font-size: clamp(1rem, 2vw, 1.5rem);
-}
-#projects-technologies .card p {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+#projects-technologies .card p, #projects-technologies .card > h4{
+  font-size: var(--small-font-size);
 }
 
 #projects-technologies .card > ul {
@@ -73,6 +70,7 @@
 #projects h3{
   transition: transform 0.5s;
   transform-origin: bottom left;
+  font-size: var(--regular-font-size);
 }
 #projects h3:hover{
   transform: scale(1.1);

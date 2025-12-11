@@ -44,10 +44,13 @@
   display: grid;
   grid-template-columns: repeat(2, 50%);
 }
-#work-education .card > .header > h4,
 #work-education .card > .header > p,
-#work-education .card > ul {
-  font-size: clamp(0.8rem, 2vw, 1rem);
+#work-education .card > ul,
+#work-education .card > .header > h4 {
+  font-size: var(--small-font-size);
+}
+#work-education  h3{
+  font-size: var(--regular-font-size);
 }
 #work-education .card > .header > p {
   justify-self: end;

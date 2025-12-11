@@ -28,12 +28,3 @@ main button.selected > h3 {
   background-color: black;
   color: var(--primary);
 }
-main h3 {
-  font-size: clamp(1.25rem, 3vw, 2rem);
-}
-.card > h3 {
-  font-size: clamp(1.1rem, 2vw, 2rem);
-}
-.card > h4 {
-  font-size: clamp(1rem, 2vw, 1.5rem);
-}
